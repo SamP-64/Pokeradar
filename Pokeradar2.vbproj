@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1775DE73-8720-4D90-A7A9-807A0EDE51AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Pokeradar2.My.MyApplication</StartupObject>
+    <RootNamespace>Pokeradar2</RootNamespace>
+    <AssemblyName>Pokeradar2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Sampa\OneDrive\Documents\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>17</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Pokeradar2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Pokeradar2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E558AC43F7B153426763471702E3FAE44C8D9C80</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Pokeradar2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImageForm.Designer.vb">
+      <DependentUpon>ImageForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImageForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radar.Designer.vb">
+      <DependentUpon>Radar.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrassButtons.Designer.vb">
+      <DependentUpon>GrassButtons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GrassButtons.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageForm.resx">
+      <DependentUpon>ImageForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radar.resx">
+      <DependentUpon>Radar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrassButtons.resx">
+      <DependentUpon>GrassButtons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Pokeradar2_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Colours\BrownName.png" />
+    <Content Include="Resources\Colours\DsPatches.png" />
+    <Content Include="Resources\Colours\Green1.png" />
+    <Content Include="Resources\Colours\Green10.png" />
+    <Content Include="Resources\Colours\Green11.png" />
+    <Content Include="Resources\Colours\Green12.png" />
+    <Content Include="Resources\Colours\Green13.png" />
+    <Content Include="Resources\Colours\Green14.png" />
+    <Content Include="Resources\Colours\Green15.png" />
+    <Content Include="Resources\Colours\Green16.png" />
+    <Content Include="Resources\Colours\Green17.png" />
+    <Content Include="Resources\Colours\Green2.png" />
+    <Content Include="Resources\Colours\Green3.png" />
+    <Content Include="Resources\Colours\Green4.png" />
+    <Content Include="Resources\Colours\Green5.png" />
+    <Content Include="Resources\Colours\Green6.png" />
+    <Content Include="Resources\Colours\Green7.png" />
+    <Content Include="Resources\Colours\Green8.png" />
+    <Content Include="Resources\Colours\Green9.png" />
+    <Content Include="Resources\Colours\Greeny.png" />
+    <Content Include="Resources\Colours\Greeny2.png" />
+    <Content Include="Resources\Colours\Greeny3.png" />
+    <Content Include="Resources\Colours\Greeny4.png" />
+    <Content Include="Resources\Colours\Greeny5.png" />
+    <Content Include="Resources\Colours\Red.png" />
+    <Content Include="Resources\Colours\ShinyColour1.png" />
+    <Content Include="Resources\Colours\ShinyColour10.png" />
+    <Content Include="Resources\Colours\ShinyColour11.png" />
+    <Content Include="Resources\Colours\ShinyColour12.png" />
+    <Content Include="Resources\Colours\ShinyColour13.png" />
+    <Content Include="Resources\Colours\ShinyColour14.png" />
+    <Content Include="Resources\Colours\ShinyColour15.png" />
+    <Content Include="Resources\Colours\ShinyColour2.png" />
+    <Content Include="Resources\Colours\ShinyColour3.png" />
+    <Content Include="Resources\Colours\ShinyColour4.png" />
+    <Content Include="Resources\Colours\ShinyColour5.png" />
+    <Content Include="Resources\Colours\ShinyColour6.png" />
+    <Content Include="Resources\Colours\ShinyColour7.png" />
+    <Content Include="Resources\Colours\ShinyColour8.png" />
+    <Content Include="Resources\Colours\ShinyColour9.png" />
+    <Content Include="Resources\Colours\Target Pokemon.png" />
+    <Content Include="Resources\Instructions.txt" />
+    <Content Include="Resources\LastLocation.txt" />
+    <Content Include="Resources\LastPokemon.txt" />
+    <Content Include="Resources\LastStartPosition.txt" />
+    <Content Include="Resources\Pokemon2\Abra.png" />
+    <Content Include="Resources\Pokemon2\Ariados.png" />
+    <Content Include="Resources\Pokemon2\Aron.png" />
+    <Content Include="Resources\Pokemon2\Bagon.png" />
+    <Content Include="Resources\Pokemon2\Baltoy.png" />
+    <Content Include="Resources\Pokemon2\Banette.png" />
+    <Content Include="Resources\Pokemon2\Beautifly.png" />
+    <Content Include="Resources\Pokemon2\Bellsprout.png" />
+    <Content Include="Resources\Pokemon2\Bibarel.png" />
+    <Content Include="Resources\Pokemon2\Bidoof.png" />
+    <Content Include="Resources\Pokemon2\Bonsly.png" />
+    <Content Include="Resources\Pokemon2\Bronzor.png" />
+    <Content Include="Resources\Pokemon2\Budew.png" />
+    <Content Include="Resources\Pokemon2\Buisel.png" />
+    <Content Include="Resources\Pokemon2\Buneary.png" />
+    <Content Include="Resources\Pokemon2\Cascoon.png" />
+    <Content Include="Resources\Pokemon2\Castform.png" />
+    <Content Include="Resources\Pokemon2\Chansey.png" />
+    <Content Include="Resources\Pokemon2\Chatot.png" />
+    <Content Include="Resources\Pokemon2\Chingling.png" />
+    <Content Include="Resources\Pokemon2\Clefairy.png" />
+    <Content Include="Resources\Pokemon2\Cleffa.png" />
+    <Content Include="Resources\Pokemon2\Corsola.png" />
+    <Content Include="Resources\Pokemon2\Ditto.png" />
+    <Content Include="Resources\Pokemon2\Dunsparce.png" />
+    <Content Include="Resources\Pokemon2\Dusclops.png" />
+    <Content Include="Resources\Pokemon2\Duskull.png" />
+    <Content Include="Resources\Pokemon2\Dustox.png" />
+    <Content Include="Resources\Pokemon2\Electabuzz.png" />
+    <Content Include="Resources\Pokemon2\Fearow.png" />
+    <Content Include="Resources\Pokemon2\Floatzel.png" />
+    <Content Include="Resources\Pokemon2\Gastly.png" />
+    <Content Include="Resources\Pokemon2\Gastrodon East.png" />
+    <Content Include="Resources\Pokemon2\Gastrodon West.png" />
+    <Content Include="Resources\Pokemon2\Geodude.png" />
+    <Content Include="Resources\Pokemon2\Girafarig.png" />
+    <Content Include="Resources\Pokemon2\Gligar.png" />
+    <Content Include="Resources\Pokemon2\Gloom.png" />
+    <Content Include="Resources\Pokemon2\Golbat.png" />
+    <Content Include="Resources\Pokemon2\Golduck.png" />
+    <Content Include="Resources\Pokemon2\Graveler.png" />
+    <Content Include="Resources\Pokemon2\Hoothoot.png" />
+    <Content Include="Resources\Pokemon2\Hopip.png" />
+    <Content Include="Resources\Pokemon2\Houndour.png" />
+    <Content Include="Resources\Pokemon2\Illumise.png" />
+    <Content Include="Resources\Pokemon2\Kirlia.png" />
+    <Content Include="Resources\Pokemon2\Kricketot.png" />
+    <Content Include="Resources\Pokemon2\Kricketune.png" />
+    <Content Include="Resources\Pokemon2\Larvitar.png" />
+    <Content Include="Resources\Pokemon2\Luxio.png" />
+    <Content Include="Resources\Pokemon2\Machoke.png" />
+    <Content Include="Resources\Pokemon2\Machop.png" />
+    <Content Include="Resources\Pokemon2\Magmar.png" />
+    <Content Include="Resources\Pokemon2\Magnemite.png" />
+    <Content Include="Resources\Pokemon2\Magneton.png" />
+    <Content Include="Resources\Pokemon2\Makuhita.png" />
+    <Content Include="Resources\Pokemon2\Marill.png" />
+    <Content Include="Resources\Pokemon2\Meditite.png" />
+    <Content Include="Resources\Pokemon2\Miltank.png" />
+    <Content Include="Resources\Pokemon2\Mr Mime.png" />
+    <Content Include="Resources\Pokemon2\Nidoran Female.png" />
+    <Content Include="Resources\Pokemon2\Nidoran Male.png" />
+    <Content Include="Resources\Pokemon2\Nidorina.png" />
+    <Content Include="Resources\Pokemon2\Nidorino.png" />
+    <Content Include="Resources\Pokemon2\Noctowl.png" />
+    <Content Include="Resources\Pokemon2\Oddish.png" />
+    <Content Include="Resources\Pokemon2\Pachirisu.png" />
+    <Content Include="Resources\Pokemon2\Pelipper.png" />
+    <Content Include="Resources\Pokemon2\Pichu.png" />
+    <Content Include="Resources\Pokemon2\Pidgey.png" />
+    <Content Include="Resources\Pokemon2\Pikachu.png" />
+    <Content Include="Resources\Pokemon2\Ponyta.png" />
+    <Content Include="Resources\Pokemon2\Poochyena.png" />
+    <Content Include="Resources\Pokemon2\Primape.png" />
+    <Content Include="Resources\Pokemon2\Psyduck.png" />
+    <Content Include="Resources\Pokemon2\Ralts.png" />
+    <Content Include="Resources\Pokemon2\Raticate.png" />
+    <Content Include="Resources\Pokemon2\Rattata.png" />
+    <Content Include="Resources\Pokemon2\Rhyhorn.png" />
+    <Content Include="Resources\Pokemon2\Roselia.png" />
+    <Content Include="Resources\Pokemon2\Scyther.png" />
+    <Content Include="Resources\Pokemon2\Sellos East 2.png" />
+    <Content Include="Resources\Pokemon2\Sentret.png" />
+    <Content Include="Resources\Pokemon2\Shellos East.png" />
+    <Content Include="Resources\Pokemon2\Shellos West.png" />
+    <Content Include="Resources\Pokemon2\Shinx.png" />
+    <Content Include="Resources\Pokemon2\Silcoon.png" />
+    <Content Include="Resources\Pokemon2\Slowpoke.png" />
+    <Content Include="Resources\Pokemon2\Smeargle.png" />
+    <Content Include="Resources\Pokemon2\Snorunt.png" />
+    <Content Include="Resources\Pokemon2\Snover.png" />
+    <Content Include="Resources\Pokemon2\Spearow.png" />
+    <Content Include="Resources\Pokemon2\Stantler.png" />
+    <Content Include="Resources\Pokemon2\Staravia.png" />
+    <Content Include="Resources\Pokemon2\Starly.png" />
+    <Content Include="Resources\Pokemon2\Sudowoodo.png" />
+    <Content Include="Resources\Pokemon2\Swablu.png" />
+    <Content Include="Resources\Pokemon2\Swellow.png" />
+    <Content Include="Resources\Pokemon2\Tauros.png" />
+    <Content Include="Resources\Pokemon2\Togepi.png" />
+    <Content Include="Resources\Pokemon2\Tyrogue.png" />
+    <Content Include="Resources\Pokemon2\Venomoth.png" />
+    <Content Include="Resources\Pokemon2\Volbeat.png" />
+    <Content Include="Resources\Pokemon2\Voltorb.png" />
+    <Content Include="Resources\Pokemon2\Weepinbell.png" />
+    <Content Include="Resources\Pokemon2\Wingull.png" />
+    <Content Include="Resources\Pokemon2\Wobbuffet.png" />
+    <Content Include="Resources\Pokemon2\Wurmple.png" />
+    <Content Include="Resources\Pokemon2\Zigzagoon.png" />
+    <Content Include="Resources\Pokemon2\Zubat.png" />
+    <Content Include="Resources\PokemonCheckArea\Abra.txt" />
+    <Content Include="Resources\PokemonCheckArea\Ariados.txt" />
+    <Content Include="Resources\PokemonCheckArea\Aron.txt" />
+    <Content Include="Resources\PokemonCheckArea\Bagon.txt" />
+    <Content Include="Resources\PokemonCheckArea\Baltoy.txt" />
+    <Content Include="Resources\PokemonCheckArea\Banette.txt" />
+    <Content Include="Resources\PokemonCheckArea\Beautifly.txt" />
+    <Content Include="Resources\PokemonCheckArea\Bellsprout.txt" />
+    <Content Include="Resources\PokemonCheckArea\Bibarel.txt" />
+    <Content Include="Resources\PokemonCheckArea\Bidoof.txt" />
+    <Content Include="Resources\PokemonCheckArea\Bonsly.txt" />
+    <Content Include="Resources\PokemonCheckArea\Bronzor.txt" />
+    <Content Include="Resources\PokemonCheckArea\Budew.txt" />
+    <Content Include="Resources\PokemonCheckArea\Buisel.txt" />
+    <Content Include="Resources\PokemonCheckArea\Buneary.txt" />
+    <Content Include="Resources\PokemonCheckArea\Cascoon.txt" />
+    <Content Include="Resources\PokemonCheckArea\Castform.txt" />
+    <Content Include="Resources\PokemonCheckArea\Chansey.txt" />
+    <Content Include="Resources\PokemonCheckArea\Chatot.txt" />
+    <Content Include="Resources\PokemonCheckArea\Chingling.txt" />
+    <Content Include="Resources\PokemonCheckArea\Clefairy.txt" />
+    <Content Include="Resources\PokemonCheckArea\Cleffa.txt" />
+    <Content Include="Resources\PokemonCheckArea\Corsola.txt" />
+    <Content Include="Resources\PokemonCheckArea\Ditto.txt" />
+    <Content Include="Resources\PokemonCheckArea\Dunsparce.txt" />
+    <Content Include="Resources\PokemonCheckArea\Dusclops.txt" />
+    <Content Include="Resources\PokemonCheckArea\Duskull.txt" />
+    <Content Include="Resources\PokemonCheckArea\Dustox.txt" />
+    <Content Include="Resources\PokemonCheckArea\Electabuzz.txt" />
+    <Content Include="Resources\PokemonCheckArea\Fearow.txt" />
+    <Content Include="Resources\PokemonCheckArea\Floatzel.txt" />
+    <Content Include="Resources\PokemonCheckArea\Gastly.txt" />
+    <Content Include="Resources\PokemonCheckArea\Gastrodon East.txt" />
+    <Content Include="Resources\PokemonCheckArea\Gastrodon West.txt" />
+    <Content Include="Resources\PokemonCheckArea\Geodude.txt" />
+    <Content Include="Resources\PokemonCheckArea\Girafarig.txt" />
+    <Content Include="Resources\PokemonCheckArea\Gligar.txt" />
+    <Content Include="Resources\PokemonCheckArea\Gloom.txt" />
+    <Content Include="Resources\PokemonCheckArea\Golbat.txt" />
+    <Content Include="Resources\PokemonCheckArea\Golduck.txt" />
+    <Content Include="Resources\PokemonCheckArea\Graveler.txt" />
+    <Content Include="Resources\PokemonCheckArea\Hoothoot.txt" />
+    <Content Include="Resources\PokemonCheckArea\Hopip.txt" />
+    <Content Include="Resources\PokemonCheckArea\Houndour.txt" />
+    <Content Include="Resources\PokemonCheckArea\Illumise.txt" />
+    <Content Include="Resources\PokemonCheckArea\Kirlia.txt" />
+    <Content Include="Resources\PokemonCheckArea\Kricketot.txt" />
+    <Content Include="Resources\PokemonCheckArea\Kricketune.txt" />
+    <Content Include="Resources\PokemonCheckArea\Larvitar.txt" />
+    <Content Include="Resources\PokemonCheckArea\Luxio.txt" />
+    <Content Include="Resources\PokemonCheckArea\Machoke.txt" />
+    <Content Include="Resources\PokemonCheckArea\Machop.txt" />
+    <Content Include="Resources\PokemonCheckArea\Magmar.txt" />
+    <Content Include="Resources\PokemonCheckArea\Magnemite.txt" />
+    <Content Include="Resources\PokemonCheckArea\Magneton.txt" />
+    <Content Include="Resources\PokemonCheckArea\Makuhita.txt" />
+    <Content Include="Resources\PokemonCheckArea\Marill.txt" />
+    <Content Include="Resources\PokemonCheckArea\Meditite.txt" />
+    <Content Include="Resources\PokemonCheckArea\Miltank.txt" />
+    <Content Include="Resources\PokemonCheckArea\Mr Mime.txt" />
+    <Content Include="Resources\PokemonCheckArea\Nidoran Female.txt" />
+    <Content Include="Resources\PokemonCheckArea\Nidoran Male.txt" />
+    <Content Include="Resources\PokemonCheckArea\Nidorina.txt" />
+    <Content Include="Resources\PokemonCheckArea\Nidorino.txt" />
+    <Content Include="Resources\PokemonCheckArea\Noctowl.txt" />
+    <Content Include="Resources\PokemonCheckArea\Oddish.txt" />
+    <Content Include="Resources\PokemonCheckArea\Pachirisu.txt" />
+    <Content Include="Resources\PokemonCheckArea\Pelipper.txt" />
+    <Content Include="Resources\PokemonCheckArea\Pichu.txt" />
+    <Content Include="Resources\PokemonCheckArea\Pidgey.txt" />
+    <Content Include="Resources\PokemonCheckArea\Pikachu.txt" />
+    <Content Include="Resources\PokemonCheckArea\Ponyta.txt" />
+    <Content Include="Resources\PokemonCheckArea\Poochyena.txt" />
+    <Content Include="Resources\PokemonCheckArea\Primape.txt" />
+    <Content Include="Resources\PokemonCheckArea\Psyduck.txt" />
+    <Content Include="Resources\PokemonCheckArea\Ralts.txt" />
+    <Content Include="Resources\PokemonCheckArea\Raticate.txt" />
+    <Content Include="Resources\PokemonCheckArea\Rattata.txt" />
+    <Content Include="Resources\PokemonCheckArea\Rhyhorn.txt" />
+    <Content Include="Resources\PokemonCheckArea\Roselia.txt" />
+    <Content Include="Resources\PokemonCheckArea\Scyther.txt" />
+    <Content Include="Resources\PokemonCheckArea\Sellos East 2.txt" />
+    <Content Include="Resources\PokemonCheckArea\Sentret.txt" />
+    <Content Include="Resources\PokemonCheckArea\Shellos East.txt" />
+    <Content Include="Resources\PokemonCheckArea\Shellos West.txt" />
+    <Content Include="Resources\PokemonCheckArea\Shinx.txt" />
+    <Content Include="Resources\PokemonCheckArea\Silcoon.txt" />
+    <Content Include="Resources\PokemonCheckArea\Slowpoke.txt" />
+    <Content Include="Resources\PokemonCheckArea\Smeargle.txt" />
+    <Content Include="Resources\PokemonCheckArea\Snorunt.txt" />
+    <Content Include="Resources\PokemonCheckArea\Snover.txt" />
+    <Content Include="Resources\PokemonCheckArea\Spearow.txt" />
+    <Content Include="Resources\PokemonCheckArea\Stantler.txt" />
+    <Content Include="Resources\PokemonCheckArea\Staravia.txt" />
+    <Content Include="Resources\PokemonCheckArea\Starly.txt" />
+    <Content Include="Resources\PokemonCheckArea\Sudowoodo.txt" />
+    <Content Include="Resources\PokemonCheckArea\Swablu.txt" />
+    <Content Include="Resources\PokemonCheckArea\Swellow.txt" />
+    <Content Include="Resources\PokemonCheckArea\Tauros.txt" />
+    <Content Include="Resources\PokemonCheckArea\Togepi.txt" />
+    <Content Include="Resources\PokemonCheckArea\Tyrogue.txt" />
+    <Content Include="Resources\PokemonCheckArea\Venomoth.txt" />
+    <Content Include="Resources\PokemonCheckArea\Volbeat.txt" />
+    <Content Include="Resources\PokemonCheckArea\Voltorb.txt" />
+    <Content Include="Resources\PokemonCheckArea\Weepinbell.txt" />
+    <Content Include="Resources\PokemonCheckArea\Wingull.txt" />
+    <Content Include="Resources\PokemonCheckArea\Wobbuffet.txt" />
+    <Content Include="Resources\PokemonCheckArea\Wurmple.txt" />
+    <Content Include="Resources\PokemonCheckArea\Zigzagoon.txt" />
+    <Content Include="Resources\PokemonCheckArea\Zubat.txt" />
+    <Content Include="Resources\Pokemon\Abra.png" />
+    <Content Include="Resources\Pokemon\Ariados.png" />
+    <Content Include="Resources\Pokemon\Aron.png" />
+    <Content Include="Resources\Pokemon\Bagon.png" />
+    <Content Include="Resources\Pokemon\Baltoy.png" />
+    <Content Include="Resources\Pokemon\Banette.png" />
+    <Content Include="Resources\Pokemon\Beautifly.png" />
+    <Content Include="Resources\Pokemon\Bellsprout.png" />
+    <Content Include="Resources\Pokemon\Bibarel.png" />
+    <Content Include="Resources\Pokemon\Bidoof.png" />
+    <Content Include="Resources\Pokemon\Bonsly.png" />
+    <Content Include="Resources\Pokemon\Bronzor.png" />
+    <Content Include="Resources\Pokemon\Budew.png" />
+    <Content Include="Resources\Pokemon\Buisel.png" />
+    <Content Include="Resources\Pokemon\Buneary.png" />
+    <Content Include="Resources\Pokemon\Cascoon.png" />
+    <Content Include="Resources\Pokemon\Castform.png" />
+    <Content Include="Resources\Pokemon\Chansey.png" />
+    <Content Include="Resources\Pokemon\Chatot.png" />
+    <Content Include="Resources\Pokemon\Chingling.png" />
+    <Content Include="Resources\Pokemon\Clefairy.png" />
+    <Content Include="Resources\Pokemon\Cleffa.png" />
+    <Content Include="Resources\Pokemon\Corsola.png" />
+    <Content Include="Resources\Pokemon\Ditto.png" />
+    <Content Include="Resources\Pokemon\Dunsparce.png" />
+    <Content Include="Resources\Pokemon\Dusclops.png" />
+    <Content Include="Resources\Pokemon\Duskull.png" />
+    <Content Include="Resources\Pokemon\Dustox.png" />
+    <Content Include="Resources\Pokemon\Electabuzz.png" />
+    <Content Include="Resources\Pokemon\Fearow.png" />
+    <Content Include="Resources\Pokemon\Floatzel.png" />
+    <Content Include="Resources\Pokemon\Gastly.png" />
+    <Content Include="Resources\Pokemon\Gastrodon East.png" />
+    <Content Include="Resources\Pokemon\Gastrodon West.png" />
+    <Content Include="Resources\Pokemon\Geodude.png" />
+    <Content Include="Resources\Pokemon\Girafarig.png" />
+    <Content Include="Resources\Pokemon\Gligar.png" />
+    <Content Include="Resources\Pokemon\Gloom.png" />
+    <Content Include="Resources\Pokemon\Golbat.png" />
+    <Content Include="Resources\Pokemon\Golduck.png" />
+    <Content Include="Resources\Pokemon\Graveler.png" />
+    <Content Include="Resources\Pokemon\Hoothoot.png" />
+    <Content Include="Resources\Pokemon\Hopip.png" />
+    <Content Include="Resources\Pokemon\Houndour.png" />
+    <Content Include="Resources\Pokemon\Illumise.png" />
+    <Content Include="Resources\Pokemon\Kirlia.png" />
+    <Content Include="Resources\Pokemon\Kricketot.png" />
+    <Content Include="Resources\Pokemon\Kricketune.png" />
+    <Content Include="Resources\Pokemon\Larvitar.png" />
+    <Content Include="Resources\Pokemon\Luxio.png" />
+    <Content Include="Resources\Pokemon\Machoke.png" />
+    <Content Include="Resources\Pokemon\Machop.png" />
+    <Content Include="Resources\Pokemon\Magmar.png" />
+    <Content Include="Resources\Pokemon\Magnemite.png" />
+    <Content Include="Resources\Pokemon\Magneton.png" />
+    <Content Include="Resources\Pokemon\Makuhita.png" />
+    <Content Include="Resources\Pokemon\Marill.png" />
+    <Content Include="Resources\Pokemon\Meditite.png" />
+    <Content Include="Resources\Pokemon\Miltank.png" />
+    <Content Include="Resources\Pokemon\Mr Mime.png" />
+    <Content Include="Resources\Pokemon\Nidoran Female.png" />
+    <Content Include="Resources\Pokemon\Nidoran Male.png" />
+    <Content Include="Resources\Pokemon\Nidorina.png" />
+    <Content Include="Resources\Pokemon\Nidorino.png" />
+    <Content Include="Resources\Pokemon\Noctowl.png" />
+    <Content Include="Resources\Pokemon\Oddish.png" />
+    <Content Include="Resources\Pokemon\Pachirisu.png" />
+    <Content Include="Resources\Pokemon\Pelipper.png" />
+    <Content Include="Resources\Pokemon\Pichu.png" />
+    <Content Include="Resources\Pokemon\Pidgey.png" />
+    <Content Include="Resources\Pokemon\Pikachu.png" />
+    <Content Include="Resources\Pokemon\Ponyta.png" />
+    <Content Include="Resources\Pokemon\Poochyena.png" />
+    <Content Include="Resources\Pokemon\Primape.png" />
+    <Content Include="Resources\Pokemon\Psyduck.png" />
+    <Content Include="Resources\Pokemon\Ralts.png" />
+    <Content Include="Resources\Pokemon\Raticate.png" />
+    <Content Include="Resources\Pokemon\Rattata.png" />
+    <Content Include="Resources\Pokemon\Rhyhorn.png" />
+    <Content Include="Resources\Pokemon\Roselia.png" />
+    <Content Include="Resources\Pokemon\Scyther.png" />
+    <Content Include="Resources\Pokemon\Sellos East 2.png" />
+    <Content Include="Resources\Pokemon\Sentret.png" />
+    <Content Include="Resources\Pokemon\Shellos East.png" />
+    <Content Include="Resources\Pokemon\Shellos West.png" />
+    <Content Include="Resources\Pokemon\Shinx.png" />
+    <Content Include="Resources\Pokemon\Silcoon.png" />
+    <Content Include="Resources\Pokemon\Slowpoke.png" />
+    <Content Include="Resources\Pokemon\Smeargle.png" />
+    <Content Include="Resources\Pokemon\Snorunt.png" />
+    <Content Include="Resources\Pokemon\Snover.png" />
+    <Content Include="Resources\Pokemon\Spearow.png" />
+    <Content Include="Resources\Pokemon\Stantler.png" />
+    <Content Include="Resources\Pokemon\Staravia.png" />
+    <Content Include="Resources\Pokemon\Starly.png" />
+    <Content Include="Resources\Pokemon\Sudowoodo.png" />
+    <Content Include="Resources\Pokemon\Swablu.png" />
+    <Content Include="Resources\Pokemon\Swellow.png" />
+    <Content Include="Resources\Pokemon\Tauros.png" />
+    <Content Include="Resources\Pokemon\Togepi.png" />
+    <Content Include="Resources\Pokemon\Tyrogue.png" />
+    <Content Include="Resources\Pokemon\Venomoth.png" />
+    <Content Include="Resources\Pokemon\Volbeat.png" />
+    <Content Include="Resources\Pokemon\Voltorb.png" />
+    <Content Include="Resources\Pokemon\Weepinbell.png" />
+    <Content Include="Resources\Pokemon\Wingull.png" />
+    <Content Include="Resources\Pokemon\Wobbuffet.png" />
+    <Content Include="Resources\Pokemon\Wurmple.png" />
+    <Content Include="Resources\Pokemon\Zigzagoon.png" />
+    <Content Include="Resources\Pokemon\Zubat.png" />
+    <Content Include="Resources\Pokeradar\Abra.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Aron.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Bagon.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Baltoy.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Hopip.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Miltank.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Nidoran Female.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Nidoran Male.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Nidorina.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Nidorino.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Poochyena.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Primape.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Sentret.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Slowpoke.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Smeargle.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Stantler.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Swellow.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Tauros.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Togepi.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Tyrogue.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Venomoth.png" />
+    <Content Include="Resources\RadarExclusiveTargetPokemon\Wobbuffet.png" />
+    <Content Include="Resources\Routes\Fuego Ironworks.txt" />
+    <Content Include="Resources\Routes\Lake Acuity.txt" />
+    <Content Include="Resources\Routes\Lake Valor.txt" />
+    <Content Include="Resources\Routes\Lake Verity.txt" />
+    <Content Include="Resources\Routes\Route 201.txt" />
+    <Content Include="Resources\Routes\Route 202.txt" />
+    <Content Include="Resources\Routes\Route 203.txt" />
+    <Content Include="Resources\Routes\Route 204.txt" />
+    <Content Include="Resources\Routes\Route 205 North.txt" />
+    <Content Include="Resources\Routes\Route 205.txt" />
+    <Content Include="Resources\Routes\Route 206.txt" />
+    <Content Include="Resources\Routes\Route 207.txt" />
+    <Content Include="Resources\Routes\Route 208.txt" />
+    <Content Include="Resources\Routes\Route 209.txt" />
+    <Content Include="Resources\Routes\Route 210 North.txt" />
+    <Content Include="Resources\Routes\Route 210.txt" />
+    <Content Include="Resources\Routes\Route 211 West.txt" />
+    <Content Include="Resources\Routes\Route 211.txt" />
+    <Content Include="Resources\Routes\Route 212.txt" />
+    <Content Include="Resources\Routes\Route 213.txt" />
+    <Content Include="Resources\Routes\Route 214.txt" />
+    <Content Include="Resources\Routes\Route 218.txt" />
+    <Content Include="Resources\Routes\Route 221.txt" />
+    <Content Include="Resources\Routes\Route 222.txt" />
+    <Content Include="Resources\Routes\Route 224.txt" />
+    <Content Include="Resources\Routes\Route 225.txt" />
+    <Content Include="Resources\Routes\Route 226.txt" />
+    <Content Include="Resources\Routes\Route 229.txt" />
+    <Content Include="Resources\Routes\Route 230.txt" />
+    <Content Include="Resources\Routes\Sendoff Spring.txt" />
+    <Content Include="Resources\Routes\Trophy Garden.txt" />
+    <Content Include="Resources\Routes\Valor LakeFront.txt" />
+    <Content Include="Resources\Target Pokemon\Abra.png" />
+    <Content Include="Resources\Target Pokemon\Ariados.png" />
+    <Content Include="Resources\Target Pokemon\Banette.png" />
+    <Content Include="Resources\Target Pokemon\Beautifly.png" />
+    <Content Include="Resources\Target Pokemon\Bellsprout.png" />
+    <Content Include="Resources\Target Pokemon\Bibarel.png" />
+    <Content Include="Resources\Target Pokemon\Bidoof.png" />
+    <Content Include="Resources\Target Pokemon\Bonsly.png" />
+    <Content Include="Resources\Target Pokemon\Bronzor.png" />
+    <Content Include="Resources\Target Pokemon\Budew.png" />
+    <Content Include="Resources\Target Pokemon\Buisel.png" />
+    <Content Include="Resources\Target Pokemon\Buneary.png" />
+    <Content Include="Resources\Target Pokemon\Cascoon.png" />
+    <Content Include="Resources\Target Pokemon\Castform.png" />
+    <Content Include="Resources\Target Pokemon\Chansey.png" />
+    <Content Include="Resources\Target Pokemon\Chatot.png" />
+    <Content Include="Resources\Target Pokemon\Chingling.png" />
+    <Content Include="Resources\Target Pokemon\Clefairy.png" />
+    <Content Include="Resources\Target Pokemon\Cleffa.png" />
+    <Content Include="Resources\Target Pokemon\Corsola.png" />
+    <Content Include="Resources\Target Pokemon\Ditto.png" />
+    <Content Include="Resources\Target Pokemon\Dunsparce.png" />
+    <Content Include="Resources\Target Pokemon\Dusclops.png" />
+    <Content Include="Resources\Target Pokemon\Duskull.png" />
+    <Content Include="Resources\Target Pokemon\Dustox.png" />
+    <Content Include="Resources\Target Pokemon\Electabuzz.png" />
+    <Content Include="Resources\Target Pokemon\Fearow.png" />
+    <Content Include="Resources\Target Pokemon\Floatzel.png" />
+    <Content Include="Resources\Target Pokemon\Gastly.png" />
+    <Content Include="Resources\Target Pokemon\Gastrodon East.png" />
+    <Content Include="Resources\Target Pokemon\Gastrodon West.png" />
+    <Content Include="Resources\Target Pokemon\Geodude.png" />
+    <Content Include="Resources\Target Pokemon\Girafarig.png" />
+    <Content Include="Resources\Target Pokemon\Gligar.png" />
+    <Content Include="Resources\Target Pokemon\Gloom.png" />
+    <Content Include="Resources\Target Pokemon\Golbat.png" />
+    <Content Include="Resources\Target Pokemon\Golduck.png" />
+    <Content Include="Resources\Target Pokemon\Graveler.png" />
+    <Content Include="Resources\Target Pokemon\Hoothoot.png" />
+    <Content Include="Resources\Target Pokemon\Houndour.png" />
+    <Content Include="Resources\Target Pokemon\Illumise.png" />
+    <Content Include="Resources\Target Pokemon\Kirlia.png" />
+    <Content Include="Resources\Target Pokemon\Kricketot.png" />
+    <Content Include="Resources\Target Pokemon\Kricketune.png" />
+    <Content Include="Resources\Target Pokemon\Larvitar.png" />
+    <Content Include="Resources\Target Pokemon\Luxio.png" />
+    <Content Include="Resources\Target Pokemon\Machoke.png" />
+    <Content Include="Resources\Target Pokemon\Machop.png" />
+    <Content Include="Resources\Target Pokemon\Magmar.png" />
+    <Content Include="Resources\Target Pokemon\Magnemite.png" />
+    <Content Include="Resources\Target Pokemon\Magneton.png" />
+    <Content Include="Resources\Target Pokemon\Makuhita.png" />
+    <Content Include="Resources\Target Pokemon\Marill.png" />
+    <Content Include="Resources\Target Pokemon\Meditite.png" />
+    <Content Include="Resources\Target Pokemon\Mr Mime.png" />
+    <Content Include="Resources\Target Pokemon\Noctowl.png" />
+    <Content Include="Resources\Target Pokemon\Oddish.png" />
+    <Content Include="Resources\Target Pokemon\Pachirisu.png" />
+    <Content Include="Resources\Target Pokemon\Pelipper.png" />
+    <Content Include="Resources\Target Pokemon\Pichu.png" />
+    <Content Include="Resources\Target Pokemon\Pidgey.png" />
+    <Content Include="Resources\Target Pokemon\Pikachu.png" />
+    <Content Include="Resources\Target Pokemon\Ponyta.png" />
+    <Content Include="Resources\Target Pokemon\Psyduck.png" />
+    <Content Include="Resources\Target Pokemon\Ralts.png" />
+    <Content Include="Resources\Target Pokemon\Raticate.png" />
+    <Content Include="Resources\Target Pokemon\Rattata.png" />
+    <Content Include="Resources\Target Pokemon\Rhyhorn.png" />
+    <Content Include="Resources\Target Pokemon\Roselia.png" />
+    <Content Include="Resources\Target Pokemon\Scyther.png" />
+    <Content Include="Resources\Target Pokemon\Sellos East 2.png" />
+    <Content Include="Resources\Target Pokemon\Shellos East.png" />
+    <Content Include="Resources\Target Pokemon\Shellos West.png" />
+    <Content Include="Resources\Target Pokemon\Shinx.png" />
+    <Content Include="Resources\Target Pokemon\Silcoon.png" />
+    <Content Include="Resources\Target Pokemon\Snorunt.png" />
+    <Content Include="Resources\Target Pokemon\Snover.png" />
+    <Content Include="Resources\Target Pokemon\Spearow.png" />
+    <Content Include="Resources\Target Pokemon\Staravia.png" />
+    <Content Include="Resources\Target Pokemon\Starly.png" />
+    <Content Include="Resources\Target Pokemon\Sudowoodo.png" />
+    <Content Include="Resources\Target Pokemon\Swablu.png" />
+    <Content Include="Resources\Target Pokemon\Volbeat.png" />
+    <Content Include="Resources\Target Pokemon\Voltorb.png" />
+    <Content Include="Resources\Target Pokemon\Weepinbell.png" />
+    <Content Include="Resources\Target Pokemon\Wingull.png" />
+    <Content Include="Resources\Target Pokemon\Wurmple.png" />
+    <Content Include="Resources\Target Pokemon\Zigzagoon.png" />
+    <Content Include="Resources\Target Pokemon\Zubat.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
